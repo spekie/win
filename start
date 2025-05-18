@@ -1,0 +1,3 @@
+#!/bin/sh
+qemu-system-x86_64 -drive file=disk_image,format=raw -drive if=pflash,format=raw,file=OVMF.4m.fd -m 8G -enable-kvm -cpu host
+#                          raw disk image                                         uefi firmware   memory  enables kvm and emulates host's cpu
